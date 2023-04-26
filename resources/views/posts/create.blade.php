@@ -9,7 +9,9 @@
 
 <h1>Create new post</h1>
 
-<form action="">
+<form action="{{route('post.insert')}}" method="post">
+
+    @csrf
     <input type="text" name="title" placeholder="Enter the title">
     <input type="text" name="body" placeholder="Content of the post">
     <button type="submit">Submit</button>
