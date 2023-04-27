@@ -24,4 +24,10 @@ class PostController extends Controller
 
         return response('Added data');
     }
+
+    public function edit($id) {
+        $post = DB::table('posts')->where('id', $id)->first();
+
+        return view('posts.edit', compact('post'));
+    }
 }
