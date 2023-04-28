@@ -7,7 +7,7 @@
 @endsection --}}
 
 
-<h1>Edit post</h1>
+<h1>Edit the post</h1>
 
 <form action="{{route('post.insert')}}" method="post">
 
