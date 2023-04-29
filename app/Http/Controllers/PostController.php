@@ -30,4 +30,15 @@ class PostController extends Controller
 
         return view('posts.edit', compact('post'));
     }
+
+    public function update(Request $request,$id) {
+        DB::table('posts')->where('id', $id)->update([
+            'title'=>$request->title,
+            'body'=>$request->body
+        ]);
+
+        // return response('Edited Successfully');
+
+        return redirect()->route('posts');
+    }
 }

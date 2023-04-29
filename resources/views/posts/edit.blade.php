@@ -7,11 +7,12 @@
 @endsection --}}
 
 
-<h1>Edit the post</h1>
+<h1>Edit Post: {{$post->title}}</h1>
 
-<form action="{{route('post.insert')}}" method="post">
+<form action="{{route('post.update', $post->id)}}" method="post">
 
     @csrf
+    @method('put')
     <input type="text" name="title" placeholder="{{$post->title}}">
     <input type="text" name="body" placeholder="{{$post->body}}">
     <button type="submit">Submit</button>
