@@ -27,3 +27,5 @@ Route::post('/posts/insert', [PostController::class, 'insert'])->name('post.inse
 Route::get('/posts/edit/{id}', [PostController::class, 'edit'])->name('post.edit');
 
 Route::put('/posts/update/{id}', [PostController::class, 'update'])->name('post.update');
+
+
