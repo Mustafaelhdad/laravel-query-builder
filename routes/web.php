@@ -28,4 +28,4 @@ Route::get('/posts/edit/{id}', [PostController::class, 'edit'])->name('post.edit
 
 Route::put('/posts/update/{id}', [PostController::class, 'update'])->name('post.update');
 
-
+Route::get('/posts/delete/{id}', [PostController::class, 'delete'])->name('post.delete');
