@@ -1,5 +1,7 @@
 <h1>All Posts</h1>
 
+<s href="{{route('posts.delete')}}">Delete All Posts</s>
+
 @foreach ($posts as $post)
     <h3>{{$post->title}}</h3>
     <p>{{$post->body}}</p>
