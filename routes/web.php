@@ -31,3 +31,5 @@ Route::put('/posts/update/{id}', [PostController::class, 'update'])->name('post.
 Route::get('/posts/delete/{id}', [PostController::class, 'delete'])->name('post.delete');
 
 Route::get('/posts/delete/all', [PostController::class, 'deleteAll'])->name('posts.delete');
+
+Route::get('/posts/delete/all/truncate', [PostController::class, 'deleteAllTruncate'])->name('posts.delete.all.truncate');

@@ -2,6 +2,8 @@
 
 <s href="{{route('posts.delete')}}">Delete All Posts</s>
 
+<s href="{{route('posts.delete.all.truncate')}}">Delete All Posts with truncate</s>
+
 @foreach ($posts as $post)
     <h3>{{$post->title}}</h3>
     <p>{{$post->body}}</p>
